@@ -1,4 +1,28 @@
-nd initialize npm -  npm init -y   npm init -y creates package.json.
+Project Goals:
+
+Install Playwright and create tests
+Automate adding 3 todos, mark 1 as completed, delete
+Generate Playwright HTML report and open it
+Add assertions and check failure in report
+Take screenshots and video on failure and attach to report
+Run with interactive ui, debug mode, and trace on
+Scenario Details
+
+Demo App: https://todomvc.com/examples/react/dist/
+
+Scenario: Automate core Todo actions (add, complete, delete) on the TodoMVC app.
+
+Key Learnings: Setup, locators, assertions, interactions, and advanced reporting configurations.
+
+Tools: Node.js, Playwright (use latest if possible), VS Code (or any editor).
+
+End Result: A working Playwright Test that runs locally, produces an HTML report, and captures debugging assets on failure.
+
+Step-by-Step Implementation and Commands
+-
+Step 1 - Create a new project folder and open in VS Code (or any IDE)
+Step 2 - On terminal goto project folder location and check if node is installed -  node -v   npm -v
+Step 3 - Create project folder and initialize npm -  npm init -y   npm init -y creates package.json.
 Step 4 - Install Playwright Test (dev dependency) and install browsers:
 npm init playwright@latest
 npx playwright install
