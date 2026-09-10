@@ -17,10 +17,10 @@ test("todo list flow @sanity", async ({ page }) => {
   await page.getByTestId("text-input").fill("Make dinner");
   await page.getByTestId("text-input").press("Enter");
 
-  // Mark "Complete todays todos" as completed
+  // Mark "Cmplete todays todos" as completed
   await page
     .getByRole("listitem")
-    .filter({ hasText: "Complete todays todos" })
+    .filter({ hasText: "Cmplete todays todos" })
     .getByTestId("todo-item-toggle")
     .check();
 
