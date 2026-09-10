@@ -54,4 +54,6 @@ test("todo list flow @sanity", async ({ page }) => {
       .filter({ hasText: "Eat lunch" })
       .getByTestId("todo-item-label"),
   ).toContainText("Eat lunch");
+
+  await expect(page.locator(".todo-list li")).toHaveCount(5);
 });
